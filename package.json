@@ -1,0 +1,18 @@
+{
+  "name": "toko-assignment",
+  "version": "1.0.0",
+  "description": "Toko Tutor take home assignment solution",
+  "main": "index.js",
+  "repository": "https://github.com/vwvats/toko-assignment.git",
+  "author": "Vivek Vats",
+  "private": true,
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
