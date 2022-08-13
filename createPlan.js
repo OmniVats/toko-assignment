@@ -7,6 +7,7 @@ const splitIntoLevels = (levelString) => levelString.split("|");
 const createPlan = (studentLevel, studentInterests) => {
   const [primary, secondary = ""] = studentInterests;
 
+  // filter all relevant topics from data
   const allTopics = data.filter((topic) => {
     const isTopicOfInterest =
       topic.associated_interest === primary ||
@@ -20,7 +21,8 @@ const createPlan = (studentLevel, studentInterests) => {
     }
   });
 
-  const fiveDayPlan = allTopics.slice(0, 6);
+  // only return the first five topics
+  const fiveDayPlan = allTopics.slice(0, 5);
 
   return fiveDayPlan;
 };

@@ -6,11 +6,13 @@
   "repository": "https://github.com/vwvats/toko-assignment.git",
   "author": "Vivek Vats",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "nodemon index.js"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.10"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
